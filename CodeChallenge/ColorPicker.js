@@ -33,7 +33,8 @@ cpick.addEventListener("click", () => {
     rgbShow.innerText = rgbc;
     let hexc = rgbToHex(r, g, b);
     hexShow.innerText = hexc;
-    html.style.backgroundColor = rgbc;
+    let gColor = "linear-gradient(" + rgbc + "," + rgbc + ")";
+    html.style.backgroundImage = gColor;
 });
 
 c2pick.addEventListener("click", () => {
